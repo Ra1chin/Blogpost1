@@ -1,0 +1,71 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #4997fd;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Main Content - Widened */
+.container {
+    max-width: 90%;  /* Increased width */
+    width: 1000px;   /* Makes it wider on large screens */
+    margin: 20px auto;
+    padding: 25px;
+    background: #046988;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex-grow: 1; /* Push footer to bottom */
+    
+}
+.container p {
+    color: #f4f4f4;
+}
+.container h3 {
+    color: #cf8804;
+}
+
+/* Footer */
+footer {
+    background: #4997fd;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Reduce header text size on mobile */
+    header {
+        font-size: 1rem; /* Smaller font size for mobile */
+        padding: 0.8rem;
+    }
+}
